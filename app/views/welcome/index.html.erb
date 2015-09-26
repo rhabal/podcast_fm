@@ -1,22 +1,5 @@
 <div id="background">
-	<header class="cf">
-		<div class="wrapper_wide">
-			<a href="index.html" id="logo">Podcast.fm</a>
-			<nav>
-				<ul>
-					<% unless podcast_signed_in? %> 
-						<li><a href="#">Explore</a></li>
-						<li><%= link_to "Sign In", new_podcast_session_path %></li>
-						<li><%= link_to "Create a Podcast", new_podcast_registration_path %></li>
-					<% else %>
-						<li><%= link_to "Dashboard", new_podcast_session_path %></li>
-						<li><%= link_to "Explore", new_podcast_session_path %></li>
-						<li><%= link_to "Sign Out", destroy_podcast_session_path, method: :delete %></li>
-					<% end %>
-				</ul>
-			</nav>
-		</div>
-	</header>
+
 	<div class="wrapper_skinny">
 		<h1>Discover your new favorite<br> podcast, or create your own.</h1>
 
