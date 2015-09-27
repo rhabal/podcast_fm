@@ -1,0 +1,118 @@
+
+<div id="podcast_show">
+	<div id="show_banner">
+		<div class="wrapper_skinny">
+			<h1><%= @podcast.title %></h1>
+			<p class="description">
+				<%= @podcast.description %>
+			</p>
+			<% unless @podcast.itunes.blank? %>
+				<a href="<%= @podcast.itunes %>" class="subscribe_link">iTunes</a>
+			<% end %>
+			<% unless @podcast.stitcher.blank? %>
+				<a href="<%= @podcast.stitcher %>" class="subscribe_link">Stitcher</a>
+			<% end %>
+			<% unless @podcast.podbay.blank? %>
+				<a href="<%= @podcast.podbay %>" class="subscribe_link">Podbay</a>
+			<% end %>
+
+		</div>
+	</div>
+
+	<div id="breadcrumb">
+		<%= link_to podcasts_path do %>
+			All Podcasts
+
+		<% end %>
+				<span>/</span>
+			The Rocketship Podcast
+	</div>
+	<div id="episodes">
+		<div class="wrapper_skinny">
+			<ul class="cf">
+				<li class="cf">
+					<div class="episode_thumbnail">
+						<a href="podcasts_episodes.html">
+							<img src="images/p1.jpg" alt="p1">
+						</a>
+					</div>
+					<div class="episode_overview">
+						<h2><a href="#">Why You Should Charge From Day One</a></h2>
+						<p class="description">
+							Cornhole whatever Schlitz try-hard, bespoke gentrify typewriter Helvetica. You probably haven't heard of them bespoke ennui put a bird on...
+						</p>
+					</div>
+				</li>
+
+				<li class="cf">
+					<div class="episode_thumbnail">
+						<a href="podcasts_episodes.html">
+							<img src="images/p2.jpg" alt="p1">
+						</a>
+					</div>
+					<div class="episode_overview">
+						<h2><a href="#">Why You Should Charge From Day One</a></h2>
+						<p class="description">
+							Cornhole whatever Schlitz try-hard, bespoke gentrify typewriter Helvetica. You probably haven't heard of them bespoke ennui put a bird on...
+						</p>
+					</div>
+				</li>
+
+				<li class="cf">
+					<div class="episode_thumbnail">
+						<a href="podcasts_episodes.html">
+							<img src="images/p3.jpg" alt="p1">
+						</a>
+					</div>
+					<div class="episode_overview">
+						<h2><a href="#">Why You Should Charge From Day One</a></h2>
+						<p class="description">
+							Cornhole whatever Schlitz try-hard, bespoke gentrify typewriter Helvetica. You probably haven't heard of them bespoke ennui put a bird on...
+						</p>
+					</div>
+				</li>
+
+				<li class="cf">
+					<div class="episode_thumbnail">
+						<a href="podcasts_episodes.html">
+							<img src="images/p4.jpg" alt="p1">
+						</a>
+					</div>
+					<div class="episode_overview">
+						<h2><a href="#">Why You Should Charge From Day One</a></h2>
+						<p class="description">
+							Cornhole whatever Schlitz try-hard, bespoke gentrify typewriter Helvetica. You probably haven't heard of them bespoke ennui put a bird on...
+						</p>
+					</div>
+				</li>
+
+				<li class="cf">
+					<div class="episode_thumbnail">
+						<a href="podcasts_episodes.html">
+							<img src="images/p5.jpg" alt="p1">
+						</a>
+					</div>
+					<div class="episode_overview">
+						<h2><a href="#">Why You Should Charge From Day One</a></h2>
+						<p class="description">
+							Cornhole whatever Schlitz try-hard, bespoke gentrify typewriter Helvetica. You probably haven't heard of them bespoke ennui put a bird on...
+						</p>
+					</div>
+				</li>
+
+
+			</ul>
+		</div>
+	</div>
+
+</div>
+
+<!-- <div class="cf"></div> -->
+<div class="pagination">
+	<span class="previous_page disabled">Previous</span>
+	<em class="current">1</em>
+	<a href="#">2</a>
+	<a href="#" class="next_page">Next</a>
+
+</div>
+
