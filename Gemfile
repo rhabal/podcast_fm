@@ -15,6 +15,7 @@ gem 'devise', '~> 3.5.2'
 gem 'paperclip', '~> 4.3.1'
 # gem 'aws-sdk', '~> 2.1.23'
 gem 'aws-sdk', '< 2.0'
+gem 'font-awesome-sass'
 
 group :development, :test do
 
