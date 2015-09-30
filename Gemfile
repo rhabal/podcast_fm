@@ -16,6 +16,7 @@ gem 'paperclip', '~> 4.3.1'
 # gem 'aws-sdk', '~> 2.1.23'
 gem 'aws-sdk', '< 2.0'
 gem 'font-awesome-sass'
+gem 'will_paginate', '~> 3.0.7'
 
 group :development, :test do
 
