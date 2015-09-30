@@ -93,9 +93,7 @@
 				<% @episodes.each do |episode| %>
 					<li class="cf">
 						<div class="episode_thumbnail">
-							<a href="podcasts_episodes.html">
-								<img src="images/p1.jpg" alt="p1">
-							</a>
+							<%= image_tag episode.episode_thumbnail.url(:medium) %>
 						</div>
 						<div class="episode_overview">
 							<h2><%= link_to episode.title, podcast_episode_path(@podcast, episode) %></h2>
